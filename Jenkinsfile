@@ -15,13 +15,6 @@ pipeline
             }
         }
        
-        stage('Deploy Application To Mulesoft '){
-        steps{
-        bat 'mvn package deploy -DmuleDeploy -Danypoint.userName=OssomVictory5 -Danypoint.password=Capg@1999'
-        }
-       
-        }
-       
    
     }
 }
