@@ -50,9 +50,14 @@
                 <configuration>
                     <coverage>
                         <runCoverage>true</runCoverage>
-                        <formats>
-                            <format>html</format>
-                        </formats>
+			<failBuild>true</failBuild>
+                        <requiredApplicationCoverage>90</requiredApplicationCoverage>
+                        <requiredResourceCoverage>100</requiredResourceCoverage>
+                        <requiredFlowCoverage>100</requiredFlowCoverage>
+			<formats>
+				<format>console</format>
+				<format>html</format>
+			</formats>
                     </coverage>
                 </configuration>
             </plugin>
